@@ -1,0 +1,57 @@
+.menuTable{
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	position: absolute;
+}
+
+.tile{
+	top:0;
+	width: 40%;
+	height: 30%;
+	border-radius: 5px;
+	border-color: #ff0000;
+	border-width: 2px;
+	/*background: -webkit-linear-gradient(top,rgba(244,67,54,0.5),rgba(244,67,54,1));
+	background: linear-gradient(to bottom, rgba(244,67,54,0.5), rgba(244,67,54,1));*/
+	background: -webkit-linear-gradient(top,rgba(255,255,255,0.5),rgba(255,255,255,1));
+	background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,1));
+	box-shadow: 2px 2px 5px #212121;
+	color:#212121;
+	/*color:#ffffff;*/
+	font-size: 18px;
+	text-align: center;
+}
+
+.leftTile{
+	left:0;
+}
+
+.rightTile{
+	right:0;
+}
+
+.tileIcon{
+	vertical-align: middle;
+	width: 48px;
+	height: 48px;
+}
+
+.tileLink{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	vertical-align: middle;
+	text-decoration: none;
+	color:#212121;
+
+}
+.tileLinkContent{
+	width: 100%;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	margin-top: -25%;
+
+}

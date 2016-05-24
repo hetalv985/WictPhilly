@@ -1,0 +1,18 @@
+<div ng-controller="dashboardController">
+	<table cellspacing="10px" class="menuTable">
+		<tr ng-repeat="n in [0,1,2]">
+			<td class="tile leftTile">
+				<div>
+					<img src="{{dashboardMenu.items[2*n].itemIcon}}" class="tileIcon"/><br/>
+					<span style="">{{dashboardMenu.items[2*n].itemTitle}}</span>
+				</div>
+			</td>
+			<td class="tile rightTile">
+				<div>
+					<img src="{{dashboardMenu.items[2*n+1].itemIcon}}" class="tileIcon"/><br/>
+					<span style="">{{dashboardMenu.items[2*n+1].itemTitle}}</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
