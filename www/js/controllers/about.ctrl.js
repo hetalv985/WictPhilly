@@ -7,7 +7,6 @@ app.myapp.controller("aboutController", function($scope){
 
 	$scope.aboutText.wictTechItOutText = "<p><strong>WICT\'s Tech It Out initiative was launched in 2009 with the goal to create strong women leaders in technology, while also raising awareness about the vast opportunities for women in cable television.<\/strong>Tech it Out is a one-day conference that focuses on a single technical topic that is currently \"lighting up\" the industry, the event hosts between 250 and 300 attendees and industry leaders.";
 
-
 	$scope.aboutText.wictPhiladelphiaText = "<p>The Greater Philadelphia Chapter of WICT is committed to supporting WICT National\'s mission of developing leaders for the fast paced and challenging Cable Telecommunications industry.<\/p><p>Our local chapter events are designed to help our members develop and hone their skills while having the opportunity to network and connect with industry peers.<br><a href='http://www.wictphiladelphia.org'>http:\/\/www.wictphiladelphia.org<\/a><\/p>"
 
 });
