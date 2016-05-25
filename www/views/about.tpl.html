@@ -1,4 +1,14 @@
 <div ng-controller="aboutController">
-this is my about
-
+	<div class="textTile">
+		<p class="sectionTitle">VR|AR|MR<br>Welcome to the new reality.</p>
+		<p ng-bind-html="aboutText.eventText"></p>
+	</div>
+	<div class="textTile">
+		<p class="sectionTitle">WICT Tech It Out</p>
+		<p ng-bind-html="aboutText.wictTechItOutText"></p>
+	</div>
+	<div class="textTile">
+		<p class="sectionTitle">WICT Philadelphia</p>
+		<p ng-bind-html="aboutText.wictPhiladelphiaText"></p>
+	</div>
 </div>

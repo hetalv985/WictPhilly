@@ -1,5 +1,13 @@
 app.myapp.controller("aboutController", function($scope){
-	$scope.changeTitle("About");
+	$scope.updateNavbar("About", true);
 	
+	$scope.aboutText = {};
+
+	$scope.aboutText.eventText = "<p><strong>Augmented and Mixed Reality (VR|AR|MR), its current and future applications, how industry and research are driving it - and its potential for transforming our industry and world!<\/strong> The event will include demos, speakers and presentations from key innovators, researchers and vendors in the VR space, students and interns, a panel discussion, and breakout sessions with lots of opportunities for Q&A and networking.<\/p><p>Join us at Villanova University with participation from the Center for Excellence in Enterprise Technology (CEET), and the interdisciplinary team responsible for conceiving and constructing the Virtual Reality CAVE (Cave Automatic Virtual Environment) that was funded, in part, by a $1.67M National Science Foundation (NSF) grant. Demos will be available throughout the day<br><a href='https://www1.villanova.edu/villanova/media/pressreleases/2015/0303.html'>https:\/\/www1.villanova.edu\/villanova\/media\/ pressreleases\/2015\/0303.html<\/a><\/p><p>WICT strongly encourages participation from local high school, college students and interns interested in STEM to promote careers in our industry.<\/p><p>A Sponsor Showcase will be part of TIO again this year highlighting the many companies who sponsor the WICT Greater Philadelphia Chapter.<br><a href='http://www.wictphiladelphia.org/sponsorship/our-sponsors/'>http:\/\/www.wictphiladelphia.org\/sponsorship\/our-sponsors\/<\/a><\/p>";
+
+	$scope.aboutText.wictTechItOutText = "<p><strong>WICT\'s Tech It Out initiative was launched in 2009 with the goal to create strong women leaders in technology, while also raising awareness about the vast opportunities for women in cable television.<\/strong>Tech it Out is a one-day conference that focuses on a single technical topic that is currently \"lighting up\" the industry, the event hosts between 250 and 300 attendees and industry leaders.";
+
+
+	$scope.aboutText.wictPhiladelphiaText = "<p>The Greater Philadelphia Chapter of WICT is committed to supporting WICT National\'s mission of developing leaders for the fast paced and challenging Cable Telecommunications industry.<\/p><p>Our local chapter events are designed to help our members develop and hone their skills while having the opportunity to network and connect with industry peers.<br><a href='http://www.wictphiladelphia.org'>http:\/\/www.wictphiladelphia.org<\/a><\/p>"
 
 });

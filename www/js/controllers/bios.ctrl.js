@@ -1,5 +1,5 @@
 app.myapp.controller("biosController", function($scope){
-	$scope.changeTitle("Bios");
+	$scope.updateNavbar("Bios", true);
 	
 
 });

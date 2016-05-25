@@ -1,6 +1,6 @@
 app.myapp.controller("dashboardController", function($scope){
 	$scope.dashboardMenu = {};
-	$scope.changeTitle("WICT Philadelphia");
+	$scope.updateNavbar("WICT Philadelphia", false);
 
 	var item1 = {
 		itemTitle : "About",
