@@ -25,6 +25,10 @@ function config ($routeProvider) {
         when('/sponsors', {
             templateUrl: 'views/sponsors.tpl.html',
             controller: 'sponsorsController as sponsorsController'
+        }).
+        when('/bioDetails', {
+            templateUrl: 'views/biodetails.tpl.html',
+            controller: 'bioDetailsController as bioDetailsController'
         })
         .otherwise({
             redirectTo: '/'

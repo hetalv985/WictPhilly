@@ -1,4 +1,26 @@
 <div ng-controller="sponsorsController">
-Sponsors
-
+	<div class="textTile">
+		<p class="sectionTitle">Premier</p>
+		<div class="sponsorContainer" ng-repeat="logoPath in sponsorsInfo.premierSponsors">
+			<img class="sponsorLogo" src="{{logoPath}}"/>
+		</div>
+	</div>
+	<div class="textTile">
+		<p class="sectionTitle">Platinum</p>
+		<div class="sponsorContainer" ng-repeat="logoPath in sponsorsInfo.platinumSponsors">
+			<img class="sponsorLogo" src="{{logoPath}}"/>
+		</div>
+	</div>
+	<div class="textTile">
+		<p class="sectionTitle">Gold</p>
+		<div class="sponsorContainer" ng-repeat="logoPath in sponsorsInfo.goldSponsors">
+			<img class="sponsorLogo" src="{{logoPath}}"/>
+		</div>
+	</div>
+	<div class="textTile">
+		<p class="sectionTitle">Silver</p>
+		<div class="sponsorContainer" ng-repeat="logoPath in sponsorsInfo.silverSponsors">
+			<img class="sponsorLogo" src="{{logoPath}}"/>
+		</div>
+	</div>
 </div>

@@ -1,0 +1,11 @@
+.sponsorLogo{
+	width: 100%;
+	height: auto;
+}
+
+.sponsorContainer{
+	width: 20%;
+	display: inline-block;
+	margin: 16px;
+	vertical-align: middle;
+}

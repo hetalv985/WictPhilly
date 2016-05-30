@@ -1,4 +1,16 @@
 <div ng-controller="biosController">
-Bios
-
+	<a class="bioLink" href="#/bioDetails" ng-repeat = "speaker in bios track by $index" ng-click="setSelected($index)">
+		<div class="textTile">
+			<div class="headshotContainer">
+				<img class="headshot" src="{{speaker.headshot}}"/>
+			</div>
+			<div class="infoContainer">
+				<div class="speakerName">{{speaker.name}}</div>
+				<div class="speakerTitle">{{speaker.title}}</div>
+			</div>
+			<div class="accessoryContainer">
+				&gt;
+			</div>
+		</div>
+	</a>
 </div>

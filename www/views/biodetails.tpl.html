@@ -1,0 +1,13 @@
+<div ng-controller="bioDetailsController">
+	<div class="textTile">
+		<div class="headshotContainer">
+			<img class="headshot" src="{{selectedSpeaker.headshot}}"/>
+		</div>
+		<div class="infoContainer">
+			<div class="speakerName">{{selectedSpeaker.name}}</div>
+			<div class="speakerTitleBold">{{selectedSpeaker.title}}</div>
+		</div>
+		<div ng-bind-html="selectedSpeaker.bio">
+		</div>
+	</div>
+</div>

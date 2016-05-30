@@ -1,4 +1,12 @@
 <div ng-controller="scheduleController">
-Schedule
+	<div class="textTile" ng-repeat = "scheduleObj in scheduleInfo">
+		<div class="headshotContainer">
+			{{scheduleObj.eventTime}}
+		</div>
+		<div class="infoContainer">
+			<div class="speakerName">{{scheduleObj.eventTitle}}</div>
+			<div ng-bind-html="scheduleObj.eventDescription"></div>
+		</div>
+	</div>
 
 </div>
