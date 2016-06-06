@@ -1,0 +1,22 @@
+.map{
+	width: 100%;
+	height: auto;
+}
+
+.univmap{
+	width: 100%;
+}
+
+.linkUnivMap{
+	color: #212121;
+	display: inline-block;
+	width: 80%;
+	vertical-align: top;
+	line-height: 40px;
+}
+
+.accessoryUnivMap{
+	margin-right: 8px;
+	display: inline-block;
+	position: relative;
+}

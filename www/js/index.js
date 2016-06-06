@@ -17,7 +17,7 @@
  * under the License.
  */
 var app = {
-    myapp: angular.module("myapp",["ngRoute","ngAnimate","ngSanitize","ngMap"]),
+    myapp: angular.module("myapp",["ngRoute","ngAnimate","ngSanitize","ngPinchZoom"]),
 
     // Application Constructor
     initialize: function() {
@@ -52,13 +52,9 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        
+        FastClick.attach(document.body);
     },
-    // Update DOM on a Received Event
-};
 
+};
 app.initialize();

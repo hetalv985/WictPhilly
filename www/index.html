@@ -42,17 +42,19 @@
     <body>
         <div ng-app="myapp" id="container">
             <div class="navbar">
-                <a href back-button class="backBtn" ng-hide="!navBarData.showBackButton">&lt; Back</a>
+                <a href back-button class="backBtn" ng-hide="!navBarData.showBackButton">
+                <img class="backIcon" src="img/backbtn.svg"/>Back</a>
                 <span>{{navBarData.title}}</span>
             </div>
-            <ng-view class="view"></ng-view>
+            <ng-view class="view" autoscroll="true"></ng-view>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/lib/angular.min.js"></script>
         <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
         <script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
         <script type="text/javascript" src="js/lib/angular-sanitize.min.js"></script>
-        <script type="text/javascript" src="js/lib/ng-map.min.js"></script>
+        <script type="text/javascript" src="js/lib/fastclick.js"></script>
+        <script type="text/javascript" src="js/lib/ng-pinch-zoom.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/route.js"></script>
         <script type="text/javascript" src="js/controllers/dashboard.ctrl.js"></script>
@@ -63,6 +65,7 @@
         <script type="text/javascript" src="js/controllers/bios.ctrl.js"></script>
         <script type="text/javascript" src="js/controllers/sponsors.ctrl.js"></script>
         <script type="text/javascript" src="js/controllers/biodetails.ctrl.js"></script>
+        <script type="text/javascript" src="js/controllers/universitymap.ctrl.js"></script>
 
     </body>
 </html>

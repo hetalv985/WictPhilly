@@ -50,3 +50,23 @@
 	margin-top: -25%;
 
 }
+
+@media only screen 
+and (min-device-width : 768px){
+
+.tileIcon{
+	vertical-align: middle;
+	width: 80px;
+	height: 80px;
+}
+
+.tileLinkContent{
+	width: 100%;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	margin-top: -12.5%;
+
+}
+
+}

@@ -13,7 +13,7 @@ app.myapp.controller("sponsorsController", function($scope){
 	};
 
 	$scope.sponsorsInfo.premierSponsors = $scope.getSponsorsForCategory("premier", 7);
-	$scope.sponsorsInfo.platinumSponsors = $scope.getSponsorsForCategory("platinum", 4);
+	$scope.sponsorsInfo.platinumSponsors = $scope.getSponsorsForCategory("platinum", 5);
 	$scope.sponsorsInfo.goldSponsors = $scope.getSponsorsForCategory("gold", 10);
 	$scope.sponsorsInfo.silverSponsors = $scope.getSponsorsForCategory("silver", 3);
 

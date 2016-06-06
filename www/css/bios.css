@@ -1,6 +1,5 @@
-.headshotContainer{
+.leftContainer{
 	width: 20%;
-	display: inline-block;
 	vertical-align: top;
 }
 
@@ -11,20 +10,17 @@
 }
 
 .infoContainer{
-	display: inline-block;
 	width: 65%;
 	margin-left: 8px;
-
+	padding-left: 8px;
 }
 
 .accessoryContainer{
-	display: inline-block;
-	width: 5%;
+	width: auto;
 	margin-left: 8px;
 	vertical-align: middle;
 }
 .speakerName{
-	margin-top: 8px;
 	font-size: 14px;
 	font-weight: bold;
 	color: #212121;
@@ -41,4 +37,13 @@
 
 .bioLink{
 	text-decoration: none;
+}
+
+.details{
+	display: inline-block;
+}
+
+.accessoryImg{
+	width: 40px;
+	height: auto;
 }

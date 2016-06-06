@@ -1,6 +1,6 @@
 app.myapp.controller("dashboardController", function($scope){
 	$scope.dashboardMenu = {};
-	$scope.updateNavbar("WICT Philadelphia", false);
+	$scope.updateNavbar("WICT Philadelphia TIO 2016", false);
 
 	var item1 = {
 		itemTitle : "About",
@@ -35,7 +35,7 @@ app.myapp.controller("dashboardController", function($scope){
 	var item6 = {
 		itemTitle : "Register",
 		itemIcon : "img/register.svg",
-		itemLink : "#/register"
+		itemLink : "http://events.constantcontact.com/register/event?llr=g6dgmkdab&oeidk=a07ecozo3ued6595a7a"
 	};
 
 	$scope.dashboardMenu.items = [item1, item2, item3, item4, item5, item6];
