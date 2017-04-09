@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "org.wictphiladelphia.wict"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "org.wictphiladelphia.wict"
         }
     },
     "dependent_plugins": {}

@@ -10,15 +10,10 @@
 	width: 40%;
 	height: 30%;
 	border-radius: 5px;
-	border-color: #ff0000;
-	border-width: 2px;
-	/*background: -webkit-linear-gradient(top,rgba(244,67,54,0.5),rgba(244,67,54,1));
-	background: linear-gradient(to bottom, rgba(244,67,54,0.5), rgba(244,67,54,1));*/
 	background: -webkit-linear-gradient(top,rgba(255,255,255,0.5),rgba(255,255,255,1));
 	background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,1));
 	box-shadow: 2px 2px 5px #212121;
 	color:#212121;
-	/*color:#ffffff;*/
 	font-size: 18px;
 	text-align: center;
 }
@@ -53,5 +48,25 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -25%;
+
+}
+
+@media only screen 
+and (min-device-width : 768px){
+
+.tileIcon{
+	vertical-align: middle;
+	width: 80px;
+	height: 80px;
+}
+
+.tileLinkContent{
+	width: 100%;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	margin-top: -12.5%;
+
+}
 
 }

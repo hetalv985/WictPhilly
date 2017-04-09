@@ -33,6 +33,10 @@ function config ($routeProvider) {
         when('/universitymap', {
             templateUrl: 'views/universitymap.tpl.html',
             controller: 'universityMapController as universityMapController'
+        }).
+        when('/registration', {
+            templateUrl: 'views/registration.tpl.html',
+            controller: 'registrationController as registrationController'
         })
         .otherwise({
             redirectTo: '/'

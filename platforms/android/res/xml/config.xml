@@ -5,6 +5,9 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
     <allow-intent href="market:*" />
     <name>WictPhilly</name>
     <description>
@@ -21,4 +24,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="http://events.constantcontact.com/register/event?llr=g6dgmkdab&amp;oeidk=a07ecozo3ued6595a7a" />
 </widget>

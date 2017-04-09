@@ -1,41 +1,41 @@
 app.myapp.controller("dashboardController", function($scope){
 	$scope.dashboardMenu = {};
-	$scope.dashboardMenu.title = "WICT Philadelphia";
+	$scope.updateNavbar("WICT Philadelphia TIO 2016", false);
 
 	var item1 = {
 		itemTitle : "About",
 		itemIcon : "img/about.svg",
-		iTemLink : "#/about"
+		itemLink : "#/about"
 	};
 
 	var item2 = {
 		itemTitle : "Locate",
 		itemIcon : "img/locate.svg",
-		iTemLink : "#/locate"
+		itemLink : "#/locate"
 	};
 
 	var item3 = {
 		itemTitle : "Schedule",
 		itemIcon : "img/schedule.svg",
-		iTemLink : "#/schedule"
+		itemLink : "#/schedule"
 	};
 
 	var item4 = {
 		itemTitle : "Bios",
 		itemIcon : "img/bios.svg",
-		iTemLink : "#/bios"
+		itemLink : "#/bios"
 	};
 
 	var item5 = {
-		itemTitle : "Sponsor",
+		itemTitle : "Sponsors",
 		itemIcon : "img/sponsor.svg",
-		iTemLink : "#/sponsor"
+		itemLink : "#/sponsors"
 	};
 
 	var item6 = {
 		itemTitle : "Register",
 		itemIcon : "img/register.svg",
-		iTemLink : "#/register"
+		itemLink : "#/registration"
 	};
 
 	$scope.dashboardMenu.items = [item1, item2, item3, item4, item5, item6];

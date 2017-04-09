@@ -32,24 +32,41 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link rel="stylesheet" type="text/css" href="css/locate.css">
+        <link rel="stylesheet" type="text/css" href="css/bios.css">
+        <link rel="stylesheet" type="text/css" href="css/sponsors.css">
+        <link rel="stylesheet" type="text/css" href="css/schedule.css">
         <title>WICT Philadelphia</title>
     </head>
     <body>
         <div ng-app="myapp" id="container">
-            <div class="navbar">{{title.name}}</div>
-            <ng-view class="view"></ng-view>
+            <div class="navbar">
+                <a href back-button class="backBtn" ng-hide="!navBarData.showBackButton">
+                <img class="backIcon" src="img/backbtn.svg"/>Back</a>
+                <span>{{navBarData.title}}</span>
+            </div>
+            <ng-view class="view" autoscroll="true"></ng-view>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/lib/angular.min.js"></script>
         <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
         <script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="js/lib/fastclick.js"></script>
+        <script type="text/javascript" src="js/lib/ng-pinch-zoom.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/route.js"></script>
         <script type="text/javascript" src="js/controllers/dashboard.ctrl.js"></script>
         <script type="text/javascript" src="js/controllers/about.ctrl.js"></script>
         <script type="text/javascript" src="js/controllers/locate.ctrl.js"></script>
         <script type="text/javascript" src="js/controllers/schedule.ctrl.js"></script>
+        <script type="text/javascript" src="js/services/bios.srvc.js"></script>
         <script type="text/javascript" src="js/controllers/bios.ctrl.js"></script>
         <script type="text/javascript" src="js/controllers/sponsors.ctrl.js"></script>
+        <script type="text/javascript" src="js/controllers/biodetails.ctrl.js"></script>
+        <script type="text/javascript" src="js/controllers/universitymap.ctrl.js"></script>
+        <script type="text/javascript" src="js/controllers/registration.ctrl.js"></script>
+
     </body>
 </html>

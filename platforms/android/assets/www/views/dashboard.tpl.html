@@ -2,16 +2,20 @@
 	<table cellspacing="10px" class="menuTable">
 		<tr ng-repeat="n in [0,1,2]">
 			<td class="tile leftTile">
-				<div>
-					<img src="{{dashboardMenu.items[2*n].itemIcon}}" class="tileIcon"/><br/>
-					<span style="">{{dashboardMenu.items[2*n].itemTitle}}</span>
-				</div>
+				<a href="{{dashboardMenu.items[2*n].itemLink}}" class="tileLink">
+					<div class="tileLinkContent">
+						<img src="{{dashboardMenu.items[2*n].itemIcon}}" class="tileIcon"/><br/>
+						<span style="">{{dashboardMenu.items[2*n].itemTitle}}</span>
+					</div>
+				</a>
 			</td>
 			<td class="tile rightTile">
-				<div>
-					<img src="{{dashboardMenu.items[2*n+1].itemIcon}}" class="tileIcon"/><br/>
-					<span style="">{{dashboardMenu.items[2*n+1].itemTitle}}</span>
-				</div>
+				<a href="{{dashboardMenu.items[2*n+1].itemLink}}" class="tileLink">
+					<div class="tileLinkContent">
+						<img src="{{dashboardMenu.items[2*n+1].itemIcon}}" class="tileIcon"/><br/>
+						<span style="">{{dashboardMenu.items[2*n+1].itemTitle}}</span>
+					</div>
+				</a>
 			</td>
 		</tr>
 	</table>

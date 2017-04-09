@@ -17,18 +17,32 @@
  * under the License.
  */
 var app = {
-    myapp: angular.module("myapp",["ngRoute","ngAnimate"]),
+    myapp: angular.module("myapp",["ngRoute","ngAnimate","ngSanitize","ngPinchZoom"]),
 
     // Application Constructor
     initialize: function() {
         this.bindEvents();
         this.myapp.run(['$rootScope',function($rootScope){
-            $rootScope.changeTitle = function(name) {
-                $rootScope.title = {
-                  name: name
+            $rootScope.updateNavbar = function(title, showBackButton) {
+                $rootScope.navBarData = {
+                  title: title,
+                  showBackButton: showBackButton
                 };
             } 
+
         }]);
+
+        this.myapp.directive('backButton', function() {
+            return {
+                restrict: 'A',
+                link: function( scope, element, attrs ) {
+                    element.on( 'click', function () {
+                        history.back();
+                        scope.$apply();
+                    } );
+                }
+            };
+        } );
     },
     // Bind Event Listeners
     //
@@ -38,13 +52,9 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        
+        FastClick.attach(document.body);
     },
-    // Update DOM on a Received Event
-};
 
+};
 app.initialize();
