@@ -8,6 +8,9 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
+     <preference name="StatusBarBackgroundColor" value="#0D76BB" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

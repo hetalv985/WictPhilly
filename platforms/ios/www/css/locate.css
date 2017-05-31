@@ -20,3 +20,8 @@
 	display: inline-block;
 	position: relative;
 }
+
+.zoomedmap{
+	transform: scale(2.0) translate(-40%,0);
+
+}

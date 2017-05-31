@@ -24,9 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-image: url(../img/bg.png);
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:'AvenirHeavy', 'Avenir', 'HelveticaNeue', Helvetica, sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
@@ -53,10 +51,10 @@ body {
     margin-left: 0;
     width:100%;
     height: 64px;
-    background-color: #ee3124;
+    background-color: #0D76BB;
     color: #ffffff;
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 64px;
     font-size: 16px;
     z-index: 1;
@@ -67,7 +65,7 @@ body {
     top: 64px;
     left: 0;
     width:100%;
-    bottom: 8px;
+    bottom: 0px;
 }
 
 @keyframes FadeIn {

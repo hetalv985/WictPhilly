@@ -28,7 +28,7 @@ var app = {
                   title: title,
                   showBackButton: showBackButton
                 };
-            } 
+            };
 
         }]);
 
@@ -54,6 +54,7 @@ var app = {
     // deviceready Event Handler
     onDeviceReady: function() {
         FastClick.attach(document.body);
+        console.log("window.innerWidth "+window.innerWidth);
     },
 
 };

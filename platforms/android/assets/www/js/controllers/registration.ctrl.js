@@ -1,10 +1,11 @@
 app.myapp.controller("registrationController", function($scope){
-	$scope.registrationUrl = "http://events.constantcontact.com/register/event?llr=g6dgmkdab&oeidk=a07ecozo3ued6595a7a";
+	$scope.updateNavbar("Register", true);
+	$scope.registrationUrl = "https://events.r20.constantcontact.com/register/eventReg?oeidk=a07edz4lfrpdaa452a3&oseq=&c=&ch=";
 
 	$scope.openCordovaWebView = function()
 	{
-	  window.open($scope.registrationUrl,'_self'); 
+	  cordova.InAppBrowser.open($scope.registrationUrl,'_system','location=no,clearcache=yes,closebuttoncaption=Close,toolbar=yes,toolbarposition=top'); 
 	};
-	
+	$scope.openCordovaWebView();
 });
 

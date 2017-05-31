@@ -1,22 +1,15 @@
 <div ng-controller="dashboardController">
-	<table cellspacing="10px" class="menuTable">
-		<tr ng-repeat="n in [0,1,2]">
-			<td class="tile leftTile">
-				<a href="{{dashboardMenu.items[2*n].itemLink}}" class="tileLink">
-					<div class="tileLinkContent">
-						<img src="{{dashboardMenu.items[2*n].itemIcon}}" class="tileIcon"/><br/>
-						<span style="">{{dashboardMenu.items[2*n].itemTitle}}</span>
+	<div class="menuTable">
+		<div ng-repeat="n in [0,1,2,3,4,5]">
+			<div class="tile {{n%2==0?'rightTileContent':'leftTileContent'}}" style="top:{{n*getRowHeight()}}px">
+				<a href="{{dashboardMenu.items[n].itemLink}}" class="tileLink">
+					<div class="tileLinkContent" style="background-image:url('{{dashboardMenu.items[n].itemBg}}')">
+						<img src="{{dashboardMenu.items[n].itemIcon}}" class="tileIcon"/><br/>
+						<span style="">{{dashboardMenu.items[n].itemTitle}}</span>
 					</div>
 				</a>
-			</td>
-			<td class="tile rightTile">
-				<a href="{{dashboardMenu.items[2*n+1].itemLink}}" class="tileLink">
-					<div class="tileLinkContent">
-						<img src="{{dashboardMenu.items[2*n+1].itemIcon}}" class="tileIcon"/><br/>
-						<span style="">{{dashboardMenu.items[2*n+1].itemTitle}}</span>
-					</div>
-				</a>
-			</td>
-		</tr>
-	</table>
+			</div>
+		</div>
+	</div>
+	<div class="arrow-animation"></div>
 </div>

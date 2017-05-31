@@ -1,35 +1,43 @@
 .menuTable{
-	height: 100%;
 	width: 100%;
-	top: 0px;
+	height: 100%;
+	top: 8px;
 	position: absolute;
+	overflow-y: auto;
+	background-image: url('../img/cityscape1.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	z-index: 1;
 }
 
 .tile{
-	top:0;
-	width: 40%;
-	height: 30%;
+	top:100%;
+	width: 60%;
+	height: 90px;
 	border-radius: 5px;
-	background: -webkit-linear-gradient(top,rgba(255,255,255,0.5),rgba(255,255,255,1));
-	background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,1));
-	box-shadow: 2px 2px 5px #212121;
-	color:#212121;
 	font-size: 18px;
 	text-align: center;
+	position: absolute;
+	padding-right: 8px;
 }
 
-.leftTile{
+
+.leftTileContent{
 	left:0;
+	right: 40%;
 }
 
-.rightTile{
+.rightTileContent{
 	right:0;
+	left: 40%;
 }
 
 .tileIcon{
 	vertical-align: middle;
-	width: 48px;
-	height: 48px;
+	width: 30px;
+	height: 30px;
+	padding-top: 15px;
 }
 
 .tileLink{
@@ -39,16 +47,32 @@
 	position: relative;
 	vertical-align: middle;
 	text-decoration: none;
-	color:#212121;
+	color:#fff;
+	font-size: 13px;
+	font-weight: bold;
 
 }
 .tileLinkContent{
-	width: 100%;
+	width: 90%;
 	vertical-align: middle;
 	position: absolute;
-	top: 50%;
-	margin-top: -25%;
-
+	height: 100%;
+	top: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	left: 5%;
+}
+.arrow-animation{
+	background-image: url('../img/arrows.gif');
+	position: absolute;
+	z-index: 2;
+	top: 320px;
+	left: 0px;
+	width: 100%;
+	height: 192px;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 @media only screen 
@@ -56,17 +80,20 @@ and (min-device-width : 768px){
 
 .tileIcon{
 	vertical-align: middle;
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 50px;
+	padding-top: 35px;
+}
+.arrow-animation{
+	top:470px;
+	width: 100%;
+	height: 200px;
+	background-size: 512px 200px;
+	background-position: center;
 }
 
-.tileLinkContent{
-	width: 100%;
-	vertical-align: middle;
-	position: absolute;
-	top: 50%;
-	margin-top: -12.5%;
-
+.tile{
+	height: 150px;
 }
 
 }

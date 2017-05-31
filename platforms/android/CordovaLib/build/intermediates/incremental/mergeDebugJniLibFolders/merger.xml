@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/hvore001c/Documents/WICT_Tech_It_Out/Wict/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/hvore001c/Documents/WICT_Tech_It_Out/Wict/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/hvore001c/Documents/WICT_Tech_It_Out/Wict2017/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/hvore001c/Documents/WICT_Tech_It_Out/Wict2017/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>

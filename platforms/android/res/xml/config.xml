@@ -17,6 +17,9 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#0D76BB" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -24,5 +27,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://events.constantcontact.com/register/event?llr=g6dgmkdab&amp;oeidk=a07ecozo3ued6595a7a" />
+    <allow-navigation href="*" />
 </widget>
